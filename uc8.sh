@@ -17,11 +17,11 @@ Dict=([1]=$d [2]=$e [3]=$f [4]=$g)
 declare -a array
 array=("${Dict[@]}")
 
-echo "Ascending order is :"
+echo "Descending order is :"
 for i in ${Dict[@]}
 do
    echo "$i : ${Dict[$i]}"
 done
-answer=$(printf '%s\n' "${arr[@]}" | sort -n)
+answer=$(printf '%s\n' "${arr[@]}" | sort -nr)
 echo $answer
 
